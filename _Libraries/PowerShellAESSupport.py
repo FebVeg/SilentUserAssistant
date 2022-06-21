@@ -111,11 +111,11 @@ def encrypt_content_of_file(input_file):
 def decrypt_content_of_file(input_file):
     pscode = \
         f"""
-        $encrypted = Get-Content -Path "{input_file}" -Raw
-        $aesKey = (2,3,1,4,54,32,144,23,5,3,1,41,36,31,18,175,6,17,1,9,5,1,76,23)
-        $secureObject = ConvertTo-SecureString -String $encrypted -Key $aesKey
-        $decrypted = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureObject)
-        $decrypted = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($decrypted)
+        $encrypted      = Get-Content -Path "{input_file}" -Raw
+        $aesKey         = (2,3,1,4,54,32,144,23,5,3,1,41,36,31,18,175,6,17,1,9,5,1,76,23)
+        $secureObject   = ConvertTo-SecureString -String $encrypted -Key $aesKey
+        $decrypted      = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureObject)
+        $decrypted      = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($decrypted)
         $decrypted
         """.replace('        ', '')
 

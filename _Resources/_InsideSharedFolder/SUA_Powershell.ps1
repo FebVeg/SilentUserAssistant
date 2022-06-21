@@ -106,7 +106,6 @@ function main ()
 {
     $wait = 1000
     while (Test-Path -Path "$database") {
-        #logging "[ $wait ]"
         $request_to_db = sql_executer $query_read_last_record
 
         $get_user   = $request_to_db.uname

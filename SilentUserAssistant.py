@@ -30,8 +30,7 @@ print(
 CURRENT_PATH            = sys.path[0]
 PATH_TOSAVE_KEY         = os.environ['LOCALAPPDATA'] + "\\" + "Temp" + "\\" + "SUA_client.key"
 PATH_TEMPORALY_CODE     = os.environ['LOCALAPPDATA'] + "\\" + "Temp" + "\\" + "SUA_client.txt"
-PATH_POWERSHELL_CODE    = CURRENT_PATH + "\\_Resources\\_InsideSharedFolder\\SUA_Powershell.txt"
-PATH_POWERSHELL_CODE_TG = CURRENT_PATH + "\\_Resources\\_OverInternet\\SUA_TG_Powershell.txt"
+PATH_POWERSHELL_CODE    = CURRENT_PATH + "\\_Resources\\_InsideSharedFolder\\SUA_Powershell.ps1"
 PATH_VBS                = CURRENT_PATH + "\\_Resources\\LauncherCode.vbs"
 USERNAME                = 'Controller'
 TOASTER                 = ToastNotifier()
